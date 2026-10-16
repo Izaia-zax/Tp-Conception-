@@ -9,3 +9,6 @@ SELECT count(*) from plats WHERE id_categorie = 2;
 SELECT count(*) from plats WHERE id_categorie = 3;
 SELECT count(*) from plats WHERE id_categorie = 4;
 SELECT count(*) from plats WHERE id_categorie = 5;
+
+-- Etape 3  : verification du nombre total de plats
+SELECT SUM(quantite) FROM commandes_plats;
