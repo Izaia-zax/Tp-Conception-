@@ -5,6 +5,14 @@
 
 **CATEGORIE**(**id**,nom)
 
-**COMMANDES**(**id**,date_commande,reference_commande)
+**COMMANDES**(**id**,date_commande,reference_commande,#id_client,#numero_table,#id_serveur)
 
-**COMMANDEA_PLATS**(**id**,#id_commande,#id_plat,quantite)
+**COMMANDES_PLATS**(**id**,#id_commande,#id_plat,quantite)
+
+
+**CLIENTS**(**id**,nom,prenom,statut)
+
+**SERVEUR**(**id**,nom,prenom)
+
+**TABLESS**(**id**,numero_table)
+

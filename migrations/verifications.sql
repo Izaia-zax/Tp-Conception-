@@ -18,3 +18,9 @@ SELECT reference_commande,c.nom,c.prenom,c.statut
 FROM commandes 
 JOIN clients as c ON commandes.id_client = c.id
 WHERE c.statut = 'de passage';
+
+-- Etape 5 : verification du nombre de commandes par serveur
+SELECT s.nom, s.prenom, COUNT(c.id) AS nombre_commandes
+FROM serveur AS s 
+JOIN commandes AS c ON c.id_serveur = s.id
+GROUP BY s.nom, s.prenom;

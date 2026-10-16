@@ -8,3 +8,11 @@
 
 ## ETAPE 3
 -   La quantite on le calcul dynamiquement 
+
+## ETAPE 4 
+-   Mon cle etrangere est not null parcequ'une commande doit toujours etre faite par un client  
+-   Il faut joindre une commande a un client pour ne pas perdre aucune commande 
+
+## ETAPE 5
+-   Une table et une commande sont deux chose differente car une table peut avoir plusieur commande mais une commande ne peut etre que dans une seule table
+- Une table pose probleme car c'est un nom de fonction dans sql
