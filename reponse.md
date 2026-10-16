@@ -5,3 +5,6 @@
 ## ETAPE 2
 -   On ajoute pas seulement une colonne categorie car on peut faire mieux on les separants
 -   Probleme concret :  on doit toujours preciser la categorie d'une seule plat a chaque fois qu'on commande se plat 
+
+## ETAPE 3
+-   La quantite on le calcul dynamiquement 

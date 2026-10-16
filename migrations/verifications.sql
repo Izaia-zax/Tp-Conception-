@@ -12,3 +12,9 @@ SELECT count(*) from plats WHERE id_categorie = 5;
 
 -- Etape 3  : verification du nombre total de plats
 SELECT SUM(quantite) FROM commandes_plats;
+
+-- Etaope 4 : verification du client de passage et du client habituer
+SELECT reference_commande,c.nom,c.prenom,c.statut
+FROM commandes 
+JOIN clients as c ON commandes.id_client = c.id
+WHERE c.statut = 'de passage';

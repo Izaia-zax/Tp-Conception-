@@ -4,3 +4,7 @@
 
 
 **CATEGORIE**(**id**,nom)
+
+**COMMANDES**(**id**,date_commande,reference_commande)
+
+**COMMANDEA_PLATS**(**id**,#id_commande,#id_plat,quantite)
