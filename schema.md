@@ -1,3 +1,6 @@
 # SHEMA DE NOTRE BASE DE DONNEES
 
-**PLAT**(**id**,nom,prix)
+**PLATS**(**id**,nom,prix,#id_categorie)
+
+
+**CATEGORIE**(**id**,nom)
