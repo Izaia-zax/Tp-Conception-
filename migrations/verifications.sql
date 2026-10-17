@@ -24,3 +24,9 @@ SELECT s.nom, s.prenom, COUNT(c.id) AS nombre_commandes
 FROM serveur AS s 
 JOIN commandes AS c ON c.id_serveur = s.id
 GROUP BY s.nom, s.prenom;
+
+-- Etape 6 : verification des liste de commandes pas encore payees
+SELECT c.reference_commande,cp.montant_total
+FROM commandes AS c 
+JOIN commandes_plats AS cp ON c.reference_commande = cp.reference_commande
+WHERE c.reference_commande NOT IN (SELECT reference_commande FROM paiement);

@@ -16,3 +16,6 @@
 ## ETAPE 5
 -   Une table et une commande sont deux chose differente car une table peut avoir plusieur commande mais une commande ne peut etre que dans une seule table
 - Une table pose probleme car c'est un nom de fonction dans sql
+
+## ETAPE 6 
+-   Une colonne montant payer dans la table commande ne suffit pas car une commande peut etre payer en plusieur tranche et par different mode de paiement
