@@ -39,4 +39,5 @@ ADD FOREIGN KEY (id_serveur) REFERENCES serveur(id);
 UPDATE commandes SET numero_table = 'T1', id_serveur = 1 WHERE reference_commande = 'REF001';
 UPDATE commandes SET numero_table = 'T2', id_serveur = 1 WHERE reference_commande = 'REF002';
 UPDATE commandes SET numero_table = 'T3', id_serveur = 2 WHERE reference_commande = 'REF003';   
+UPDATE commandes SET numero_table = 'T4', id_serveur = 2 WHERE reference_commande = 'REF004';   
 

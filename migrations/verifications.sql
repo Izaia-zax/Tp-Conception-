@@ -10,10 +10,12 @@ SELECT count(*) from plats WHERE id_categorie = 3;
 SELECT count(*) from plats WHERE id_categorie = 4;
 SELECT count(*) from plats WHERE id_categorie = 5;
 
--- Etape 3  : verification du nombre total de plats
-SELECT SUM(quantite) FROM commandes_plats;
+-- Etape 3  : calcul du montant total de chaque commande
+SELECT reference_commande, SUM(quantite * prix_unitaire) AS montant_total
+FROM commandes_plats
+GROUP BY reference_commande;
 
--- Etaope 4 : verification du client de passage et du client habituer
+-- Etape 4 : verification du client de passage et du client habituer
 SELECT reference_commande,c.nom,c.prenom,c.statut
 FROM commandes 
 JOIN clients as c ON commandes.id_client = c.id

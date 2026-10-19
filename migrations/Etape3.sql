@@ -16,6 +16,7 @@ CREATE TABLE commandes_plats (
 INSERT INTO commandes (date_commande, reference_commande) VALUES ('2023-10-01', 'REF001');
 INSERT INTO commandes (date_commande, reference_commande) VALUES ('2023-10-01', 'REF002');
 INSERT INTO commandes (date_commande, reference_commande) VALUES ('2023-10-01', 'REF003');
+INSERT INTO commandes (date_commande, reference_commande) VALUES ('2023-10-01', 'REF004');
 
 INSERT INTO commandes_plats (id_commande, id_plat, quantite) VALUES (1, 1, 2);
 INSERT INTO commandes_plats (id_commande, id_plat, quantite) VALUES (2, 2, 1);
@@ -45,3 +46,8 @@ VALUES
     ('REF001', 1, 2),
     ('REF002', 2, 1),
     ('REF003', 3, 3);
+
+INSERT INTO commandes_plats
+    (reference_commande, id_plat, quantite)
+VALUES
+    ('REF004', 4, 1);

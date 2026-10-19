@@ -19,3 +19,6 @@
 
 ## ETAPE 6 
 -   Une colonne montant payer dans la table commande ne suffit pas car une commande peut etre payer en plusieur tranche et par different mode de paiement
+
+## ETAPE 7 
+-   Si on change le prix du plat et qu'on reexecute la verification de l'etape 3  le montant des commandes qui contiennent le plat "ROMAZAVA " augmentent

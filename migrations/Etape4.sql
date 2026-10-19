@@ -21,3 +21,4 @@ UPDATE commandes SET id_client = 2 WHERE id = 2;
 UPDATE commandes SET id_client = 3 WHERE id = 3;
 UPDATE commandes SET id_client = 4 WHERE id = 4;
 UPDATE commandes SET id_client = 5 WHERE id = 5;
+UPDATE commandes SET id_client = 5 WHERE id = 4;
