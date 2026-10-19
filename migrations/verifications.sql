@@ -32,3 +32,15 @@ SELECT c.reference_commande,cp.montant_total
 FROM commandes AS c 
 JOIN commandes_plats AS cp ON c.reference_commande = cp.reference_commande
 WHERE c.reference_commande NOT IN (SELECT reference_commande FROM paiement);
+
+-- Etape 7 : verification de l'historique des prix des plats et verification du prix unitaire des plats dans les commandes
+SELECT * FROM historique_prix_plats ORDER BY date_modification DESC;
+
+-- Etape 8 : verification de la consommation theorique des ingredients le 12 octobre
+SELECT SUM(cp.quantite_utilisee) AS consommation_theorique, i.nom
+FROM composition_plats AS cp
+JOIN ingredients AS i ON cp.id_ingredient = i.id
+JOIN commandes_plats AS cpl ON cp.id_plat = cpl.id_plat
+JOIN commandes AS c ON cpl.reference_commande = c.reference_commande
+WHERE c.date_commande = '2023-10-12'
+GROUP BY i.nom;

@@ -22,3 +22,6 @@
 
 ## ETAPE 7 
 -   Si on change le prix du plat et qu'on reexecute la verification de l'etape 3  le montant des commandes qui contiennent le plat "ROMAZAVA " augmentent
+
+## ETAPE 8
+-   La colonne ingredients n'est pas conseille car on peut pas placer leur stock comme ca 
